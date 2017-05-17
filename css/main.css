@@ -1,0 +1,470 @@
+/******NAVIGATION*********/
+
+
+.whovianLogo {
+
+    height: 40px;
+    margin-bottom: -2px;
+}
+
+
+/*for hamburger button*/
+.makeWhite {
+    color: #FFF;
+}
+
+.linkColor, ul a {
+    color: #BCD2EE;
+}
+
+linkColor, ul a:hover {
+    color: #7EB6FF;
+}
+
+.active {
+    color: #FFF;
+}
+
+.collapse ul > li:not(:first-child) {
+    margin-top: 5px;
+    border-top: 1px solid #FFF;
+    padding-top: 3px;
+}
+
+#fullBarNav li {
+    border-left: 1.5px solid #FFF;
+    padding-left: 15px;
+}
+
+#fullBarNav li:last-child {
+    border-right: 1.5px solid #FFF;
+    padding-right: 15px;
+}
+
+
+/******Star Field and Tardis Home Page*********/
+
+@-webkit-keyframes backgroundStars {
+    from {background-position: 0 0;}
+    to {background-position: -12000px 3000px}
+}
+
+@keyframes backgroundStars {
+    from {background-position: 0 0;}
+    to {background-position: -12000px 3000px}
+}
+
+
+@-webkit-keyframes moveClouds {
+    from {background-position: 0, 0;}
+    to {background-position: -10000px 3000px}
+}
+
+
+@keyframes moveClouds {
+    from {background-position: 0, 0;}
+    to {background-position: -10000px 3000px}
+}
+
+
+.starfield, .twinkle, .clouds, 
+.tardis, .logo, .tardisRt, .logo_smaller {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+.starfield {
+    background: url(../images/starfield.jpg) no-repeat top center;
+    z-index: 0;
+}
+
+.twinkle {
+    background: transparent url(../images/twinkling.png) repeat top center;
+    z-index: 1;    
+    -webkit-animation: backgroundStars 200s linear infinite;    
+            animation: backgroundStars 200s linear infinite;
+}
+
+.clouds {
+    background: transparent url(../images/clouds_color.png) repeat top center;
+    z-index: 5;
+    -webkit-animation: moveClouds 400s linear infinite;
+            animation: moveClouds 400s linear infinite;
+    
+}
+
+.tardis {
+    top: 60px;
+    height: 500px;
+    background: transparent url(../images/tardis/tardis_left.png) no-repeat top right;
+    z-index: 10; 
+    cursor: pointer;
+}
+
+.tardisRt {
+    top: 157px;
+    margin: 0 auto;
+    max-width: 300px;
+    height: auto;
+/*    background: transparent url(../images/tardis/tardis_right.png) no-repeat top;*/
+    z-index: 10;  
+    cursor: pointer;
+}
+
+.logo {
+    top: 65px;
+    left: 60px;
+    background: transparent url(../images/logo/doctorwho_logo.png) no-repeat top left;
+    z-index: 8;  
+}
+
+.logo_smaller {
+    top: 35px;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    z-index: 8;
+}
+
+.navQuote, .navSpeaker {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    position: relative;
+    font-size: 30px;
+    z-index: 15;
+}
+
+.navQuote {
+    top: 120px;
+}
+
+.navSpeaker {
+    top: 120px;
+}
+
+@media screen and (max-width: 840px) {
+    
+    .navQuote, .navSpeaker {
+        font-size: 27px;
+    }
+    
+}
+
+
+/******Abstract Bars Home Page*********/
+
+.jumbotron {
+    background-color: #fff;
+}
+
+.headerJumbotron {
+    height: 450px;
+}
+
+.doctorClocks, .applyColor, .companionClocks, 
+.villianClocks, .tardisClocks {
+    position: absolute;
+    right: 0;
+/*    bottom: 0;*/
+    left: 0;
+    width: 100%;
+    height: 150px;
+}
+
+.applyColor {    
+    z-index: 5;
+    opacity: .75;
+}
+
+.blueCover {
+    background-color: #003B6F;
+}
+
+.redCover, .tardisCover {
+    background-color: firebrick;
+}
+
+.orangeCover {
+    background-color: darkorange;
+}
+
+.titleBars {
+    font-size: 50px;
+    opacity: 1;
+    z-index: 10;
+    color: white; 
+}
+
+
+/*********footer All Pages**********/
+
+
+.footer {
+    background-color: #003B6F;
+}
+
+.colorBack {
+    background-color: #F5F5F5;
+}
+
+
+div>small, .disclaimer {
+    color: white;
+}
+
+.disclaimer>p {
+    font-size: 7pt;
+    margin-bottom: 8px;
+}
+
+
+/******Tardis Page*********/
+
+.tardisGalaxy, .tardisLowerGalaxy {
+    color: white;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 600px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.tardisGalaxy {
+    background-image: url("../images/tardis/tardisgalaxy2.jpg");
+}
+
+.tardisLowerGalaxy {
+    background-image: url("../images/tardis/tardis_space3.jpg");
+}
+
+@media screen and (min-width: 1000px) {
+    .tardisHeader {
+        padding-top: 100px;
+    }
+}
+
+.card-outline-danger {
+    border-color: firebrick;
+}
+
+
+.card-img-overlay {
+    color: greenyellow;
+    text-align: center;
+    max-width: 280px;
+    
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .idris {
+/*        width: 60%;*/
+        margin: 0 auto;
+        max-height: 400px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .cardHeight {
+        min-height: 600px;
+    }
+
+}
+
+@media screen and (min-width: 760px) {
+    .cardHeight {
+        min-height: 560px;
+    } 
+}
+
+@media screen and (min-width: 1000px) {
+    .cardHeight {
+        min-height: 590px;
+    } 
+}
+
+
+
+/*
+@media (min-width: @screen-sm-min) {
+    .text-wrapping {
+        width: auto;
+    }
+}
+*/
+
+
+/******The Doctors Page*********/
+
+
+.doctorGroup, .doctorLowerGroup {
+    color: white;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 600px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.doctorGroup {
+    background-image: url("../images/doctors/doctors_group2.jpg");
+}
+
+.doctorLowerGroup {
+    background-image: url("../images/doctors/doctors_group3.jpg");
+}
+
+
+.blockquote {
+    background-color: #003B6F;
+    color: #FFF;
+/*    padding: 25px;*/
+}
+
+.blockquote-footer {
+    color: #CCC;
+    border-top: 1px solid #FFF;
+    padding-top: 10px;
+}
+
+#quotes {
+    cursor: pointer;
+}
+
+#refresh {
+
+    width: 35px;
+
+}
+
+
+/*Used to push info under Tenth Doctor to Two Lines*/
+small {
+    display: block;
+}
+
+
+.removeBorders {
+    border-style: none;
+}
+
+.moveRealName {
+    margin-bottom: 0;
+}
+
+.cardSm, .cardLg {
+    cursor: pointer;
+}
+
+.cardSm ul li, .cardLg ul li {
+    margin-top: -20px;
+}
+
+
+/*
+.cardSm img, .cardLg img {
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 170px;
+}
+*/
+
+
+@media screen and (min-width: 544px) {
+    .cardLg {
+        height: 520px;
+    }
+
+    .cardSm img, .cardLg img {
+        margin: 0 auto;
+        max-width: 100%;
+        height: 170px;
+        max-height: 170px;
+    }
+
+    
+    .cardSm {
+        height: 460px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .cardLg {
+        height: 505px;
+    }
+    
+    
+    .cardSm {
+        height: 450px;
+    }
+    
+}
+
+.media-object {
+    height: 50px;
+}
+
+
+/******The Companions Page*********/
+
+.companionsMain {
+ max-width: 900px;
+ margin: 0 auto;
+}
+
+
+@media screen and (min-width: 540px) {
+    
+    .companionPicSquare {
+        width: 192px;
+    }    
+}
+
+.companionsList {
+    cursor: pointer;
+    margin-top: -50px;
+    
+}
+
+@media screen and (max-width: 990px) {
+    #companionsPage {
+        margin-top: 75px;
+    }
+}
+
+#companionsPage ul li {
+    border-color: #003B6F;
+}
+
+
+#companionsPage hr {
+    background-color: #003B6F;
+    height: 1.5px;
+}
+
+.downPage {
+    color: #003B6F;
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: 15px
+}
+
+.downPage:hover {
+    text-decoration: none;
+    color: firebrick;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
