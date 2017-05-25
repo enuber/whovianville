@@ -48,7 +48,7 @@ neverEndingQuote = setInterval(function () {
 
 function tardisAppear() {
     "use strict";
-    $('.tardisAnimate').fadeIn(1000).fadeOut(1000).fadeIn(1000).fadeOut(1000).fadeIn(1200).fadeOut(1200).fadeIn(1500);
+    $('.tardisAnimate').hide().fadeIn(1700).fadeOut(1000).fadeIn(1000).fadeOut(1000).fadeIn(1200).fadeOut(1200).fadeIn(1500);
 }
 
 $('.tardisAnimate').on('click', tardisAppear);
