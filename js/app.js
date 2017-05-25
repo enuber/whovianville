@@ -37,7 +37,9 @@ if (document.body.classList.contains('doctorPage')) {
 
 neverEndingQuote = setInterval(function () {
     "use strict";
-    generateQuote();
+    if (document.body.classList.contains('doctorPage')) {
+        generateQuote();
+    }
 }, 60 * 400);
 
 
@@ -55,7 +57,7 @@ $('.tardisAnimate').on('click', tardisAppear);
 function addTwinkles() {
     "use strict";
     $(".addTwinkle").addClass("twinkle");
-    $(".addClouds").addClass("clouds");
+    // $(".addClouds").addClass("clouds");
 
 }
 
@@ -63,7 +65,8 @@ function addTwinkles() {
 $(function () {
     "use strict";
     tardisAppear();
+    $(".addClouds").addClass("clouds");
     setTimeout(function () {
         addTwinkles();
-    }, 500);
+    }, 800);
 });
