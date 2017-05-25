@@ -1,3 +1,6 @@
+/*jslint browser: true*/
+/*global $, jQuery, alert*/
+
 var prevNum = -1,
     num = ranNum(doctorQuotes.length - 1),
     counter,
@@ -42,8 +45,25 @@ neverEndingQuote = setInterval(function () {
 //Make tardis appear with animation in jumbotron
 
 function tardisAppear() {
-    "use strict"; $('.tardisAnimate').fadeIn(1000).fadeOut(1000).fadeIn(1000).fadeOut(1000).fadeIn(1200).fadeOut(1200).fadeIn(1500);
+    "use strict";
+    $('.tardisAnimate').fadeIn(1000).fadeOut(1000).fadeIn(1000).fadeOut(1000).fadeIn(1200).fadeOut(1200).fadeIn(1500);
 }
 
-$(tardisAppear);
 $('.tardisAnimate').on('click', tardisAppear);
+
+
+function addTwinkles() {
+    "use strict";
+    $(".addTwinkle").addClass("twinkle");
+    $(".addClouds").addClass("clouds");
+
+}
+
+
+$(function () {
+    "use strict";
+    tardisAppear();
+    setTimeout(function () {
+        addTwinkles();
+    }, 500);
+});
