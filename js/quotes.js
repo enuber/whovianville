@@ -173,5 +173,4 @@ var doctorQuotes = [
     {quote: "Your chances of survival are about one in a thousand. So here's what you do. You forget the thousand, and you concentrate on the one.", speaker: "The Twelfth Doctor"},
     {quote: " Listen to me. Listen. I just… I just want you to think. Do you know what thinking is? It's just a fancy word for changing your mind!", speaker: "The Twelfth Doctor"},
     {quote: "I can do whatever the hell I like. You read the stories. You know who I am! And in all that time, did you ever hear anything about anyone who stopped me?", speaker: "The Twelfth Doctor"},
-    {},
 ]

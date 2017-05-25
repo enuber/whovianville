@@ -28,20 +28,20 @@ function generateQuote() {
 }
 
 
-if (document.body.classList.contains('doctorPage')) {
-    generateQuote();
-    var getQuote = document.getElementById('quotes');
-    getQuote.addEventListener('click', generateQuote);
-}
-
-
 neverEndingQuote = setInterval(function () {
     "use strict";
     if (document.body.classList.contains('doctorPage')) {
         generateQuote();
     }
-}, 60 * 400);
+}, 60 * 300);
 
+if (document.body.classList.contains('doctorPage')) {
+    generateQuote();
+    var getQuote = document.getElementById('quotes');
+    clearInterval(neverEndingQuote);
+    getQuote.addEventListener('click', generateQuote);
+    setInterval(function() {generateQuote()}, 60 * 300)
+}
 
 
 //Make tardis appear with animation in jumbotron
